@@ -44,6 +44,7 @@
   <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
   <script>
     hbspt.forms.create({
+      onFormReady: function ($form) { window.ClearbitForHubspot.addForm($form); },
       portalId: "6210573",
       formId: "bf718280-9759-4459-ad3f-05b8bea85bf1"
     });
