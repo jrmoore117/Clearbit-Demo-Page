@@ -83,6 +83,7 @@
       $("#onSubmitMessage").text(`${email} submitted!`);
       clearbit.identify(email, {
         "email": email,
+        "customTraitTest": "Test",
       });
     }
   </script>
