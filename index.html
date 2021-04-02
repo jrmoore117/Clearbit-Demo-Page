@@ -14,7 +14,6 @@
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-5L6MS49');</script>
-  <!-- End Google Tag Manager -->
 
   <!-- Tester Clearbit - Google Analytics -->
   <script>
@@ -110,23 +109,17 @@
 
   <h1>Clearbit X Identify Form</h1>
 
-  <form onsubmit="identify(event)">
-    <input id="identifyEmail" type="text" placeholder="Email" />
+  <form onsubmit="handleSubmit(event)">
+    <input type="text" name="email" placeholder="Email" />
     <input type="submit" />
   </form>
 
   <div id="onSubmitMessage"></div>
 
   <script>
-    function identify(event) {
+    function handleSubmit(event) {
       event.preventDefault();
-      const email = $("#identifyEmail").val();
-      console.log(email);
       $("#onSubmitMessage").text(`${email} submitted!`);
-      clearbit.identify(email, {
-        "email": email,
-        "customTraitTest": "Test",
-      });
     }
   </script>
 
