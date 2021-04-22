@@ -66,26 +66,9 @@
 
   <!-- Clearbit JS for HubSpot Form - Justin's Modified Version -->
   <script>
-    !function (o) {
-      var d = document,
-        r = d.getElementsByTagName("script")[0];
-      if ("object" == typeof o.ClearbitForHubspot) return console.log("Clearbit For HubSpot included more than once"), !1;
-      o.ClearbitForHubspot = {},
-        o.ClearbitForHubspot.forms = [],
-        o.ClearbitForHubspot.addForm = function (r) {
-          var t = r[0];
-          "function" == typeof o.ClearbitForHubspot.onFormReady ? o.ClearbitForHubspot.onFormReady(t) : o.ClearbitForHubspot.forms.push(t)
-        };
-      var t = d.createElement("script");
-      t.async = !0, t.src = "https://hubspot.clearbit.com/v1/forms/pk_4224c060bd62f460b5996f05586f0c30/forms.js",
-        r.parentNode.insertBefore(t, r);
-      o.addEventListener('message', function (e) {
-        if (e.data.type === 'hsFormCallback' && e.data.eventName === 'onFormReady') {
-          o.ClearbitForHubspot.addForm(d.querySelectorAll('[data-form-id="' + e.data.id + '"]'));
-        }
-      });
-    }(window);
-  </script>
+    !function(e){var o=document.getElementsByTagName("script")[0];if("object"==typeof e.ClearbitForHubspot)return console.log("Clearbit For HubSpot included more than once"),!1;e.ClearbitForHubspot={},e.ClearbitForHubspot.forms=[],e.ClearbitForHubspot.addForm=function(o){var t=o[0];"function"==typeof e.ClearbitForHubspot.onFormReady?e.ClearbitForHubspot.onFormReady(t):e.ClearbitForHubspot.forms.push(t)};var t=document.createElement("script");t.async=!0,t.src="https://hubspot.clearbit.com/v1/forms/pk_4224c060bd62f460b5996f05586f0c30/forms.js",o.parentNode.insertBefore(t,o),e.addEventListener("message",function(o){if("hsFormCallback"===o.data.type&&"onFormReady"===o.data.eventName)if(document.querySelectorAll('form[data-form-id="'+o.data.id+'"]').length>0)e.ClearbitForHubspot.addForm(document.querySelectorAll('form[data-form-id="'+o.data.id+'"]'));else if(document.querySelectorAll("iframe.hs-form-iframe").length>0){document.querySelectorAll("iframe.hs-form-iframe").forEach(function(t){t.contentWindow.document.querySelectorAll('form[data-form-id="'+o.data.id+'"]').length>0&&e.ClearbitForHubspot.addForm(t.contentWindow.document.querySelectorAll('form[data-form-id="'+o.data.id+'"]'))})}})}(window);
+    </script>
+    
 
 </head>
 
@@ -97,14 +80,13 @@
   <!-- End Google Tag Manager (noscript) -->
 
   <h1>HubSpot Form</h1>
-
   <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
   <script>
     hbspt.forms.create({
-      onFormReady: function ($form) { window.ClearbitForHubspot.addForm($form); },
-      portalId: "6210573",
-      formId: "bf718280-9759-4459-ad3f-05b8bea85bf1"
-    });
+    region: "na1",
+    portalId: "6210573",
+    formId: "bf718280-9759-4459-ad3f-05b8bea85bf1"
+  });
   </script>
 
   <h1>Clearbit X Identify Form</h1>
