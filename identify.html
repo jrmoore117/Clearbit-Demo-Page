@@ -40,10 +40,10 @@
         const formName = event.target.name;
         const email = event.target.querySelector('.ck-field-single').value;
         clearbit.identify(email, {
-          "email": email,
+          "Email": email,
           "Converted At": formName,
         });
-        document.querySelector('#identifyExample').textContent = `clearbit.identify(${email}, {\n   "email": "${email}",\n   "Converted At": "${formName}"\n})`
+        document.querySelector('#identifyExample').textContent = `clearbit.identify(${email}, {\n   "Email": "${email}",\n   "Converted At": "${formName}"\n})`
       }
       document.querySelector('#form_1').addEventListener('submit', identify);
       document.querySelector('#form_2').addEventListener('submit', identify);
