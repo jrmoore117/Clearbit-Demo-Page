@@ -1,12 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Clearbit X - Identify</title>
+
+  <!-- Clearkit One Stylesheet -->
+  <link rel="stylesheet" href="https://unpkg.com/@clearkit/one/dist/clearkit-one.css">
+
+  <!-- Clearbit X - Personal Account -->
+  <script>!function(w){var clearbit=w.clearbit=w.clearbit||[];if(!clearbit.initialize)if(clearbit.invoked)w.console&&console.error&&console.error("Clearbit snippet included twice.");else{clearbit.invoked=!0;clearbit.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","page","once","off","on"];clearbit.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);clearbit.push(e);return clearbit}};for(var t=0;t<clearbit.methods.length;t++){var e=clearbit.methods[t];clearbit[e]=clearbit.factory(e)}clearbit.load=function(t){var e=document.createElement("script");e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"x.clearbitjs.com/v1/"+t+"/clearbit.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};clearbit.SNIPPET_VERSION="3.1.0";    clearbit.load("pk_afe9704e931f9015969a925cecd1303a");    clearbit.page();  }}(window);</script>
 </head>
 <body>
-  hello world!
+  <div class="h-screen w-screen flex items-center justify-center flex-col">
+    <div class="flex items-center mb-10 w-80">
+      <div class="ck-avatar ck-avatar--company mr-2 w-6 h-6"><img src="https://logo.clearbit.com/clearbit.com" alt="Clearbit Logo"></div>
+      <h1 class="text-2xl">Clearbit X Identify</h1>
+    </div>
+    <div class="flex flex-col w-80">
+      <h1 class="text-2xl mb-2">Form 1</h1>
+      <form id="form_1" name="Form 1" class="identify-form flex flex-col mb-5">
+        <input class="ck-field-single mb-2" placeholder="Email" autocomplete="off">
+        <button class="ck-button ck-button--bold--blue mb-5" type="submit">Submit</button>
+      </form>
+      <h1 class="text-2xl mb-2">Form 2</h1>
+      <form id="form_2" name="Form 2" class="identify-form flex flex-col mb-5">
+        <input class="ck-field-single mb-2" placeholder="Email" autocomplete="off">
+        <button class="ck-button ck-button--bold--blue mb-5" type="submit">Submit</button>
+      </form>
+      <h1 class="text-2xl mb-2">Result</h1>
+      <textarea id="identifyExample" rows="5" class="ck-field-multiline" readonly>clearbit.identify( [email] ,  [traits] )</textarea>
+    </div>
+    <script>
+      function identify(event) {
+        event.preventDefault();
+        const formName = event.target.name;
+        const email = event.target.querySelector('.ck-field-single').value;
+        clearbit.identify(email, {
+          "email": email,
+          "Converted At": formName,
+        });
+        document.querySelector('#identifyExample').textContent = `clearbit.identify(${email}, {\n   "email": "${email}",\n   "Converted At": "${formName}"\n})`
+      }
+      document.querySelector('#form_1').addEventListener('submit', identify);
+      document.querySelector('#form_2').addEventListener('submit', identify);
+    </script>
+  </div>
 </body>
 </html>
