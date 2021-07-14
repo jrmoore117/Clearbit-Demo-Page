@@ -85,7 +85,10 @@
     hbspt.forms.create({
     region: "na1",
     portalId: "6210573",
-    formId: "bf718280-9759-4459-ad3f-05b8bea85bf1"
+    formId: "bf718280-9759-4459-ad3f-05b8bea85bf1",
+    onFormSubmit: function($form) {
+      console.log($form);
+    } 
   });
   </script>
 
