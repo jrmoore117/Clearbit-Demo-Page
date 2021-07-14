@@ -91,12 +91,12 @@
       console.log('Form Values :', formValues);
 
       var emailField = formValues.find(function(val) {
-        val.name === 'email'
+        return val.name === 'email'
       });
       console.log('Email Field :', emailField);
 
       console.log('Email :', emailField.value);
-      
+
       clearbit.identify(emailField.value, {
         email: emailField.value
       });
