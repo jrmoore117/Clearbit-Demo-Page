@@ -87,7 +87,14 @@
     portalId: "6210573",
     formId: "bf718280-9759-4459-ad3f-05b8bea85bf1",
     onFormSubmit: function($form) {
-      console.log($form.serializeArray());
+      var formValues = $form.serializeArray();
+      var emailField = formValues.find(function(val) {
+        val.name === 'email'
+      });
+      console.log(emailField.value);
+      clearbit.identify(emailField.value, {
+        email: emailField.value
+      });
     } 
   });
   </script>
