@@ -9,11 +9,14 @@
   <title>Clearbit Demo Page</title>
 
   <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-5L6MS49');</script>
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-5L6MS49');</script>
 
   <!-- Tester Clearbit - Google Analytics
   <script>
@@ -26,7 +29,7 @@
     ga('send', 'pageview');
     </script> -->
 
-    <!-- Reveal - GA
+  <!-- Reveal - GA
     <script>
       ga(function(){
         ga_trackers=[];
@@ -48,14 +51,17 @@
 
   <!-- Segment Analytics.js -->
   <script>
-    !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var key=analytics.methods[e];analytics[key]=analytics.factory(key)}analytics.load=function(key,e){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.13.1";
-    analytics.load("5NEQQtpLJxWQb1qfZOmG5Mkqy77jiQlw");
-    analytics.page();
-    }}();
+    !function () {
+      var analytics = window.analytics = window.analytics || []; if (!analytics.initialize) if (analytics.invoked) window.console && console.error && console.error("Segment snippet included twice."); else {
+        analytics.invoked = !0; analytics.methods = ["trackSubmit", "trackClick", "trackLink", "trackForm", "pageview", "identify", "reset", "group", "track", "ready", "alias", "debug", "page", "once", "off", "on", "addSourceMiddleware", "addIntegrationMiddleware", "setAnonymousId", "addDestinationMiddleware"]; analytics.factory = function (e) { return function () { var t = Array.prototype.slice.call(arguments); t.unshift(e); analytics.push(t); return analytics } }; for (var e = 0; e < analytics.methods.length; e++) { var key = analytics.methods[e]; analytics[key] = analytics.factory(key) } analytics.load = function (key, e) { var t = document.createElement("script"); t.type = "text/javascript"; t.async = !0; t.src = "https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js"; var n = document.getElementsByTagName("script")[0]; n.parentNode.insertBefore(t, n); analytics._loadOptions = e }; analytics.SNIPPET_VERSION = "4.13.1";
+        analytics.load("5NEQQtpLJxWQb1qfZOmG5Mkqy77jiQlw");
+        analytics.page();
+      }
+    }();
   </script>
 
   <!-- Clearbit X - Personal Clearbit Account -->
-  <script>!function(w){var clearbit=w.clearbit=w.clearbit||[];if(!clearbit.initialize)if(clearbit.invoked)w.console&&console.error&&console.error("Clearbit snippet included twice.");else{clearbit.invoked=!0;clearbit.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","page","once","off","on"];clearbit.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);clearbit.push(e);return clearbit}};for(var t=0;t<clearbit.methods.length;t++){var e=clearbit.methods[t];clearbit[e]=clearbit.factory(e)}clearbit.load=function(t){var e=document.createElement("script");e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"x.clearbitjs.com/v1/"+t+"/clearbit.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};clearbit.SNIPPET_VERSION="3.1.0";    clearbit.load("pk_afe9704e931f9015969a925cecd1303a");    clearbit.page();  }}(window);</script>
+  <script>!function (w) { var clearbit = w.clearbit = w.clearbit || []; if (!clearbit.initialize) if (clearbit.invoked) w.console && console.error && console.error("Clearbit snippet included twice."); else { clearbit.invoked = !0; clearbit.methods = ["trackSubmit", "trackClick", "trackLink", "trackForm", "pageview", "identify", "reset", "group", "track", "ready", "alias", "page", "once", "off", "on"]; clearbit.factory = function (t) { return function () { var e = Array.prototype.slice.call(arguments); e.unshift(t); clearbit.push(e); return clearbit } }; for (var t = 0; t < clearbit.methods.length; t++) { var e = clearbit.methods[t]; clearbit[e] = clearbit.factory(e) } clearbit.load = function (t) { var e = document.createElement("script"); e.async = !0; e.src = ("https:" === document.location.protocol ? "https://" : "http://") + "x.clearbitjs.com/v1/" + t + "/clearbit.min.js"; var n = document.getElementsByTagName("script")[0]; n.parentNode.insertBefore(e, n) }; clearbit.SNIPPET_VERSION = "3.1.0"; clearbit.load("pk_afe9704e931f9015969a925cecd1303a"); clearbit.page(); } }(window);</script>
 
   <!-- Clearbit X - GTM Internal
   <script>!function(w){var clearbit=w.clearbit=w.clearbit||[];if(!clearbit.initialize)if(clearbit.invoked)w.console&&console.error&&console.error("Clearbit snippet included twice.");else{clearbit.invoked=!0;clearbit.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","page","once","off","on"];clearbit.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);clearbit.push(e);return clearbit}};for(var t=0;t<clearbit.methods.length;t++){var e=clearbit.methods[t];clearbit[e]=clearbit.factory(e)}clearbit.load=function(t){var e=document.createElement("script");e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"x.clearbitjs.com/v1/"+t+"/clearbit.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};clearbit.SNIPPET_VERSION="3.1.0";    clearbit.load("pk_4224c060bd62f460b5996f05586f0c30");    clearbit.page();  }}(window);</script> -->
@@ -66,42 +72,36 @@
 
   <!-- Clearbit JS for HubSpot Form - Justin's Modified Version -->
   <script>
-    !function(e){var o=document.getElementsByTagName("script")[0];if("object"==typeof e.ClearbitForHubspot)return console.log("Clearbit For HubSpot included more than once"),!1;e.ClearbitForHubspot={},e.ClearbitForHubspot.forms=[],e.ClearbitForHubspot.addForm=function(o){var t=o[0];"function"==typeof e.ClearbitForHubspot.onFormReady?e.ClearbitForHubspot.onFormReady(t):e.ClearbitForHubspot.forms.push(t)};var t=document.createElement("script");t.async=!0,t.src="https://hubspot.clearbit.com/v1/forms/pk_4224c060bd62f460b5996f05586f0c30/forms.js",o.parentNode.insertBefore(t,o),e.addEventListener("message",function(o){if("hsFormCallback"===o.data.type&&"onFormReady"===o.data.eventName)if(document.querySelectorAll('form[data-form-id="'+o.data.id+'"]').length>0)e.ClearbitForHubspot.addForm(document.querySelectorAll('form[data-form-id="'+o.data.id+'"]'));else if(document.querySelectorAll("iframe.hs-form-iframe").length>0){document.querySelectorAll("iframe.hs-form-iframe").forEach(function(t){t.contentWindow.document.querySelectorAll('form[data-form-id="'+o.data.id+'"]').length>0&&e.ClearbitForHubspot.addForm(t.contentWindow.document.querySelectorAll('form[data-form-id="'+o.data.id+'"]'))})}})}(window);
-    </script>
-    
+    !function (e) { var o = document.getElementsByTagName("script")[0]; if ("object" == typeof e.ClearbitForHubspot) return console.log("Clearbit For HubSpot included more than once"), !1; e.ClearbitForHubspot = {}, e.ClearbitForHubspot.forms = [], e.ClearbitForHubspot.addForm = function (o) { var t = o[0]; "function" == typeof e.ClearbitForHubspot.onFormReady ? e.ClearbitForHubspot.onFormReady(t) : e.ClearbitForHubspot.forms.push(t) }; var t = document.createElement("script"); t.async = !0, t.src = "https://hubspot.clearbit.com/v1/forms/pk_4224c060bd62f460b5996f05586f0c30/forms.js", o.parentNode.insertBefore(t, o), e.addEventListener("message", function (o) { if ("hsFormCallback" === o.data.type && "onFormReady" === o.data.eventName) if (document.querySelectorAll('form[data-form-id="' + o.data.id + '"]').length > 0) e.ClearbitForHubspot.addForm(document.querySelectorAll('form[data-form-id="' + o.data.id + '"]')); else if (document.querySelectorAll("iframe.hs-form-iframe").length > 0) { document.querySelectorAll("iframe.hs-form-iframe").forEach(function (t) { t.contentWindow.document.querySelectorAll('form[data-form-id="' + o.data.id + '"]').length > 0 && e.ClearbitForHubspot.addForm(t.contentWindow.document.querySelectorAll('form[data-form-id="' + o.data.id + '"]')) }) } }) }(window);
+  </script>
+
 
 </head>
 
 <body>
 
   <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5L6MS49"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5L6MS49" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
   <h1>HubSpot Form</h1>
   <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
   <script>
     hbspt.forms.create({
-    region: "na1",
-    portalId: "6210573",
-    formId: "bf718280-9759-4459-ad3f-05b8bea85bf1",
-    onFormSubmit: function($form) {
-      var formValues = $form.serializeArray();
-      console.log('Form Values :', formValues);
-
-      var emailField = formValues.find(function(val) {
-        return val.name === 'email'
-      });
-      console.log('Email Field :', emailField);
-
-      console.log('Email :', emailField.value);
-
-      clearbit.identify(emailField.value, {
-        email: emailField.value
-      });
-    } 
-  });
+      region: "na1",
+      portalId: "6210573",
+      formId: "bf718280-9759-4459-ad3f-05b8bea85bf1",
+      onFormSubmit: function ($form) {
+        var formFields = $form.serializeArray();
+        var emailField = formFields.find(function (field) {
+          return field.name === 'email'
+        });
+        clearbit.identify(emailField.value, {
+          email: emailField.value
+        });
+      }
+    });
   </script>
 
   <h1>Clearbit X Identify Form</h1>
@@ -113,7 +113,7 @@
 
   <a href="/Clearbit-Demo-Page/identify.html">More Identify Call Examples</a>
   <a href="/Clearbit-Demo-Page/optimize.html">Reveal with Optimize Example</a>
-  
+
   <h1>Marketo Form</h1>
 
   <script src="//app-ab32.marketo.com/js/forms2/js/forms2.min.js"></script>
