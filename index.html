@@ -95,20 +95,6 @@
 
     <!-- Pardot Form -->
     <iframe src="https://go.demo.pardot.com/l/64792/2021-09-28/nd3z4" width="100%" height="500" type="text/html" frameborder="0" allowTransparency="true" style="border: 0"></iframe>
-    <script>
-      document.addEventListener("submit", function(event) {
-        console.log("FORM SUBMITTED: ", event.target);
-        if (event.target && event.target.id === 'pardot-form') {
-          console.log("PARDOT FORM SUBMITTED.");
-          var emailField = event.target.querySelectorAll('input')[0];
-          var email = emailField.value;
-          console.log("EMAIL: ", email);
-          clearbit.identify(email, {
-            email: email
-          });
-        }
-      });
-    </script>
 
   </div>
 
