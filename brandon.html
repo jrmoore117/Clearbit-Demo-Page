@@ -17,6 +17,10 @@
   })(window,document,'script','dataLayer','GTM-K46K45C');</script>
   <!-- End Google Tag Manager -->
 
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <!-- End jQuery CDN -->
+
   <!-- Clearkit One Stylesheet -->
   <link rel="stylesheet" href="https://unpkg.com/@clearkit/one/dist/clearkit-one.css">
   <!-- End Clearkit One Stylesheet -->
@@ -38,6 +42,25 @@
       <h1 class="text-xl font-medium m-0">Clearbit Product Sandbox</h1>
     </div>
 
+    <!-- Clearbit Forms -->
+    <div class="mb-8">
+      <div class="flex items-center mb-2">
+        <div class="ck-avatar ck-avatar--company mr-2 w-6 h-6 flex items-center"><img src="https://logo.clearbit.com/clearbit.com"
+            alt="Clearbit Logo"></div>
+        <h1 class="text-lg font-medium m-0">Clearbit Forms</h1>
+      </div>
+      <p class="text-gray-700 mb-2 mx-8">
+        Clearbit Forms is JavaScript that you add to your website that allows you to shorten your Marketo, HubSpot, or Pardot forms to a single field, Email, and <em>hides</em> all other fields, like First and Last Name, Company Name, Industry, Job Title, Phone Number, etc. 
+      </p>
+      <p class="text-gray-700 mb-2 mx-8">
+        It uses emails entered into the form to automatically fill in all the <em>hidden</em> fields on the form. If Clearbit cannot fill in one of the hidden form fields, it will automatically show that field to the user so they can fill it in themselves. The benefit of this product is to keep forms as short as possible, increasing the likelihood that a site visitor will convert and submit the form.
+      </p>
+      <p class="text-gray-700 mb-2 mx-8">
+        You can try out form shortening <a class="text-blue-500 underline" href="https://clearbit.com/forms-demo" target="_blank">here</a>!
+      </p>
+    </div>
+    <!-- End Clearbit Forms -->
+
     <!-- Marketo Forms -->
     <div class="mb-8">
       <div class="flex items-center mb-2">
@@ -46,19 +69,50 @@
         <h1 class="text-lg font-medium m-0">Clearbit for Marketo Forms</h1>
       </div>
       <p class="text-gray-700 mb-2 mx-8">
-        Clearbit for Marketo Forms allows you to shorten your Marketo forms down to a single field, Email, and <em>hides</em> all other fields, like First and Last Name, Company Name, Industry, Job Title, Phone Number, etc. It uses emails entered into the form to automatically fill in all the <em>hidden</em> fields on the form. If Clearbit cannot fill in one of the hidden form fields, it will automatically show that field to the user so they can fill it in themselves. The benefit of this product is to keep forms as short as possible, increasing the likelihood that a site visitor will convert and submit the form.
+        Time to try setting up Clearbit for Marketo Forms!
       </p>
       <p class="text-gray-700 mb-2 mx-8">
-        You can log into Clearbit's internal Marketo account <a class="text-blue-500 underline" href="https://login.marketo.com/">here</a>. You can use the shared credentials in 1password for clearbit@clearbit.com. Once you're logged in, we already created a Marketo form for you to work with <a class="text-blue-500 underline" href="https://engage-ab.marketo.com/?munchkinId=797-LZE-483#/classic/FO1383B2">here</a> (embedded below).
+        You can log into Clearbit's internal Marketo account <a class="text-blue-500 underline" href="https://login.marketo.com/" target="_blank">here</a>. You can use the shared credentials in 1password for clearbit@clearbit.com. Once you're logged in, we already created a Marketo form for you to work with <a class="text-blue-500 underline" href="https://engage-ab.marketo.com/?munchkinId=797-LZE-483#/classic/FO1383B2" target="_blank">here</a> (embedded below).
       </p>
 
       <!-- Marketo Form Embed -->
-      <script src="//app-ab32.marketo.com/js/forms2/js/forms2.min.js"></script>
-      <form id="mktoForm_1383"></form>
-      <script>MktoForms2.loadForm("//app-ab32.marketo.com", "797-LZE-483", 1383);</script>
+      <div class="mx-8">
+        <script src="//app-ab32.marketo.com/js/forms2/js/forms2.min.js"></script>
+        <form id="mktoForm_1383"></form>
+        <script>MktoForms2.loadForm("//app-ab32.marketo.com", "797-LZE-483", 1383);</script>
+      </div>
       <!-- End Marketo Form Embed -->
     </div>
     <!-- End Marketo Forms -->
+
+    <!-- HubSpot Forms -->
+    <div class="mb-8">
+      <div class="flex items-center mb-2">
+        <div class="ck-avatar ck-avatar--company mr-2 w-6 h-6 flex items-center"><img src="https://logo.clearbit.com/hubspot.com"
+            alt="Clearbit Logo"></div>
+        <h1 class="text-lg font-medium m-0">Clearbit for HubSpot Forms</h1>
+      </div>
+      <p class="text-gray-700 mb-2 mx-8">
+        Time to try setting up Clearbit for HubSpot Forms!
+      </p>
+      <p class="text-gray-700 mb-2 mx-8">
+        You can log into Clearbit's internal HubSpot account <a class="text-blue-500 underline" href="https://app.hubspot.com/login?_ga=2.137318521.879409880.1580938607-1707148164.1569434093" target="_blank">here</a>. You can use the shared credentials in 1password for ops+prodhubspot@clearbit.com. Select the account named "Clearbit". Once you're logged in, we already created a HubSpot form for you to work with <a class="text-blue-500 underline" href="https://app.hubspot.com/forms/6210573/c6e9db6d-6620-4583-b8e7-f4cc932c6d46/performance" target="_blank">here</a> (embedded below).
+      </p>
+
+      <!-- HubSpot Form Embed -->
+      <div class="mx-8">
+        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
+        <script>
+          hbspt.forms.create({
+          region: "na1",
+          portalId: "6210573",
+          formId: "c6e9db6d-6620-4583-b8e7-f4cc932c6d46"
+        });
+        </script>
+      </div>
+      <!-- End HubSpot Form Embed -->
+    </div>
+    <!-- End HubSpot Forms -->
 
   </div>
 
