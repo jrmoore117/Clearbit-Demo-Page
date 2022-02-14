@@ -11,8 +11,11 @@
   <!-- Clearkit One Stylesheet -->
   <link rel="stylesheet" href="https://unpkg.com/@clearkit/one/dist/clearkit-one.css">
 
+  <!-- Tags.js - Personal Account -->
+  <script src="https://tag.clearbitscripts.com/v1/pk_afe9704e931f9015969a925cecd1303a/tags.js"></script>
+  
   <!-- Clearbit X - Personal Account -->
-  <script>!function(w){var clearbit=w.clearbit=w.clearbit||[];if(!clearbit.initialize)if(clearbit.invoked)w.console&&console.error&&console.error("Clearbit snippet included twice.");else{clearbit.invoked=!0;clearbit.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","page","once","off","on"];clearbit.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);clearbit.push(e);return clearbit}};for(var t=0;t<clearbit.methods.length;t++){var e=clearbit.methods[t];clearbit[e]=clearbit.factory(e)}clearbit.load=function(t){var e=document.createElement("script");e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"x.clearbitjs.com/v1/"+t+"/clearbit.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};clearbit.SNIPPET_VERSION="3.1.0";    clearbit.load("pk_afe9704e931f9015969a925cecd1303a");    clearbit.page();  }}(window);</script>
+  <!-- <script>!function(w){var clearbit=w.clearbit=w.clearbit||[];if(!clearbit.initialize)if(clearbit.invoked)w.console&&console.error&&console.error("Clearbit snippet included twice.");else{clearbit.invoked=!0;clearbit.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","page","once","off","on"];clearbit.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);clearbit.push(e);return clearbit}};for(var t=0;t<clearbit.methods.length;t++){var e=clearbit.methods[t];clearbit[e]=clearbit.factory(e)}clearbit.load=function(t){var e=document.createElement("script");e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"x.clearbitjs.com/v1/"+t+"/clearbit.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};clearbit.SNIPPET_VERSION="3.1.0";    clearbit.load("pk_afe9704e931f9015969a925cecd1303a");    clearbit.page();  }}(window);</script> -->
 
   <!-- Clearbit X - GTM Internal
   <script>!function(w){var clearbit=w.clearbit=w.clearbit||[];if(!clearbit.initialize)if(clearbit.invoked)w.console&&console.error&&console.error("Clearbit snippet included twice.");else{clearbit.invoked=!0;clearbit.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","page","once","off","on"];clearbit.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);clearbit.push(e);return clearbit}};for(var t=0;t<clearbit.methods.length;t++){var e=clearbit.methods[t];clearbit[e]=clearbit.factory(e)}clearbit.load=function(t){var e=document.createElement("script");e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"x.clearbitjs.com/v1/"+t+"/clearbit.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};clearbit.SNIPPET_VERSION="3.1.0";    clearbit.load("pk_4224c060bd62f460b5996f05586f0c30");    clearbit.page();  }}(window);</script> -->
@@ -46,7 +49,7 @@
           "Email": email,
           "Converted At": formName,
         });
-        document.querySelector('#identifyExample').textContent = `clearbit.identify(${email}, {\n   "Email": "${email}",\n   "Converted At": "${formName}"\n})`
+        document.querySelector('#identifyExample').textContent = `clearbit.identify(${email}, {\n   "email": "${email}",\n   "converted_at": "${formName}"\n})`
       }
       document.querySelector('#form_1').addEventListener('submit', identify);
       document.querySelector('#form_2').addEventListener('submit', identify);
